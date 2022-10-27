@@ -1,0 +1,6 @@
+resourcesCrossplane:
+  limits:
+    cpu: 1000m
+resourcesPackageManager:
+  limits:
+    cpu: 1000m

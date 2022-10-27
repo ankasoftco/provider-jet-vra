@@ -50,7 +50,7 @@ make build
 ## Report a Bug
 
 For filing bugs, suggesting improvements, or requesting new features, please
-open an [issue](https://github.com/crossplane-contrib/provider-jet-vra/issues).
+open an [issue](https://github.com/ankasoftco/provider-jet-vra/issues).
 
 ## Contact
 

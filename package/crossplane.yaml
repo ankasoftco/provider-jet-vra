@@ -2,7 +2,22 @@ apiVersion: meta.pkg.crossplane.io/v1alpha1
 kind: Provider
 metadata:
   name: provider-jet-vra
+  annotations:
+    meta.crossplane.io/maintainer: Crossplane Maintainers <support@ankasoft.co>
+    meta.crossplane.io/source: github.com/ankasoftco/provider-jet-vra
+    meta.crossplane.io/license: Apache-2.0
+    meta.crossplane.io/description: |
+      VMware Aria Automation (vRA) Crossplane provider adds support for
+      managing vRA resources in Kubernetes.
+    meta.crossplane.io/readme: |
+      `provider-jet-vra` is the Crossplane infrastructure provider for [VMware Aria
+      Automation (vRA)](https://www.vmware.com/tr/products/vrealize-automation.html).
+      If you encounter an issue please reach out on
+      [slack.crossplane.io](https://slack.crossplane.io) and create an issue in
+      the
+      [ankasoftco/provider-jet-vra](https://github.com/ankasoftco/provider-jet-vra)
+      repo.
 spec:
   controller:
-    # image: ankasoftware/provider-jet-vra-controller:latest
-    image: DOCKER_REGISTRY/provider-jet-vra-controller:VERSION
+    image: ankasoftware/provider-jet-vra-controller:v0.1.2
+    #image: DOCKER_REGISTRY/provider-jet-vra-controller:VERSION

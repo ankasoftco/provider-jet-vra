@@ -25,8 +25,8 @@ import (
 	client "sigs.k8s.io/controller-runtime/pkg/client"
 )
 
-// ResolveReferences of this Device.
-func (mg *Device) ResolveReferences(ctx context.Context, c client.Reader) error {
+// ResolveReferences of this BlockDevice.
+func (mg *BlockDevice) ResolveReferences(ctx context.Context, c client.Reader) error {
 	r := reference.NewAPIResolver(c, mg)
 
 	var rsp reference.ResolutionResponse
@@ -51,8 +51,8 @@ func (mg *Device) ResolveReferences(ctx context.Context, c client.Reader) error 
 	return nil
 }
 
-// ResolveReferences of this DeviceSnapshot.
-func (mg *DeviceSnapshot) ResolveReferences(ctx context.Context, c client.Reader) error {
+// ResolveReferences of this BlockDeviceSnapshot.
+func (mg *BlockDeviceSnapshot) ResolveReferences(ctx context.Context, c client.Reader) error {
 	r := reference.NewAPIResolver(c, mg)
 
 	var rsp reference.ResolutionResponse
